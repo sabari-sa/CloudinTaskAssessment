@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+
+<div class="row">
+  <div class="col-6">
+    <button (click)="onclickWithClient()">Auth check with Client</button>
+    <div class="Details">{{clientDetail}}</div>
+  </div>
+  <div class="col-6">
+    <button (click)="onclickWithClientSecret()">Auth check with Client secret</button>
+    <div class="Details">{{clienmtSecretDetails}}</div>
+  </div>
+
+  <div class="col-6">
+    <button (click)="onclickWithClientId(739515)">Auth check with Client Id Details</button>
+    <div class="Details">{{clientIdDetail}}</div>
+  </div>
+
+  
+</div>
+<router-outlet></router-outlet>
