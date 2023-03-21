@@ -5,8 +5,8 @@
 export const environment = {
     production: false,
     apiUrl: 'https://api.seatgeek.com/2',
-    client_ID: "MzI0ODY4MDB8MTY3OTI4Njc5MC41ODE5ODY3",
-    client_secret : "6d99d314751f5522cc3ea9e9449daf1250e925fac2c2e7129e993d795b809e43"
+    client_ID: "MzI0ODY4MDB8MTY3OTM3OTQ2MS4xMzIxMDU",
+    client_secret : "1059c7113fb6fc5e3e2c6755203c3c17aee9ffc9cec6ddee95e131bae14c0a28"
   };
   
   /*

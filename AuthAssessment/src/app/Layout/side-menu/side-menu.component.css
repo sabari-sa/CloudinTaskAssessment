@@ -1,0 +1,38 @@
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: #ddd 0px 0px 5px 1px;
+    z-index: 999;
+}
+.sidemenu .header{
+    padding: 20px 0px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    color: #3f51b5;
+}
+.sidemenu ul {
+    padding: 20px 0px; 
+    margin: 0px;
+}
+
+.sidemenu ul li {
+    list-style-type: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+}
+.sidemenu ul li:hover{
+    color: purple;
+}
+
+.sidemenu ul li i{
+    padding: 3px 10px;
+    line-height: 12px;
+}

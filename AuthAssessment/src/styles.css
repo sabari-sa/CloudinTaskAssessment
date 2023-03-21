@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F2EDF3;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.Error{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    padding: 100px 120px;
+}
