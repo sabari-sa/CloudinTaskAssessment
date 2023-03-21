@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { LoginService } from "./_services/authentication.service"
+import { authService } from "./_services/authentication.service"
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent {
   clienmtSecretDetails: any;
   clientIdDetail:any;
 
-  constructor( private LoginService: LoginService,) {
+  constructor( private authService: authService,) {
 
   }
 
@@ -22,7 +22,7 @@ export class AppComponent {
 
 
   onclickWithClient(){
-    this.LoginService.withClient().subscribe(response =>{
+    this.authService.withClient().subscribe(response =>{
       this.clientDetail = JSON.stringify(response);  
       this.clienmtSecretDetails = null;
       this.clientIdDetail = null;
@@ -32,15 +32,16 @@ export class AppComponent {
   }
 
   onclickWithClientSecret(){
-    this.LoginService.withClientSecret().subscribe(response =>{
+    this.authService.withClientSecret().subscribe(response =>{
       this.clienmtSecretDetails = JSON.stringify(response);
       this.clientDetail = null;
       this.clientIdDetail = null;
   });
   }
   onclickWithClientId(id:any){
+    debugger
     id = "739515";
-    this.LoginService.withClientId(id).subscribe(response =>{
+    this.authService.withClientId(id).subscribe(response =>{
       this.clientIdDetail = JSON.stringify(response);  
       this.clienmtSecretDetails = null;
       this.clientDetail = null;

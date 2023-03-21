@@ -1,0 +1,8 @@
+.content_view{
+    width: -webkit-fill-available;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 0px;
+    padding: 75px 18px 18px 220px;
+    overflow-y: auto;
+}

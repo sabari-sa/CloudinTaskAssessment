@@ -8,7 +8,8 @@ import { environment } from "../environments/environment"
     providedIn: 'root'
 })
 
-export class LoginService {
+export class authService {
+
     constructor(private http: HttpClient) {
     }
 
